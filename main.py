@@ -10,7 +10,14 @@ print("2. Subtraction")
 print("3. Division")
 print("4. Multiplication")
 
-inp = input()
+try:
+    inp = str(sys.argv[1])
+    a = int(sys.argv[2])
+    b = int(sys.argv[3])
+except:
+    inp = input()
+    a = int(input())
+    b = int(input())
 
 if(inp=="1"):
     op = Addition()
@@ -24,7 +31,5 @@ else:
     print("Wrong input given")
     sys.exit(0)
 
-    
-a = input("A:")
-b = input("B:")
+
 print(op.operation(a,b))
