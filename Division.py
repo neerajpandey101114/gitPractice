@@ -1,6 +1,6 @@
 class Division:
     def __init__(self):
-        print("Division object created")
+        print("Division init")
         
     def operation(self, a, b):
-        print("Division of a and b:"+str(a/b))
+        print("Result: "+str(a/b))
